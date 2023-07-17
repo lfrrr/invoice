@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="所有已报销发票如下所示:"
+            android:background="@drawable/shape_10dp_corners"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="5dp"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/deepbackground" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/text2"
+            android:background="@drawable/shape_10dp_corners"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/deepbackground"
+            android:layout_margin="15dp"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="5dp"
+            android:layout_height="wrap_content"></TextView>
+        <ListView
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="600dp"></ListView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:text="返回上一页"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="@color/deepbackground"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

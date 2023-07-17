@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入要报销的金额"
+            android:id="@+id/ed1"
+            android:layout_height="wrap_content"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请选择要报销的类别"
+            android:id="@+id/ed2"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交通" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="差旅" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="耗材" />
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招待" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/lightbackground"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:drawableLeft="@mipmap/input"
+                android:text="确认"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:id="@+id/return1"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/lightbackground"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:drawableLeft="@mipmap/input"
+                android:text="返回首页"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/deepbackground" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"></TextView>
+        <ListView
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"></ListView>
+    </LinearLayout>
+</ScrollView>
