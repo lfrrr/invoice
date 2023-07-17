@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scan">
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="#2F5496"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:text="点击扫描发票二维码存储发票"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/return1"
+        android:layout_width="match_parent"
+        android:backgroundTint="#2F5496"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:text="返回主页"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

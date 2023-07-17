@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:hint="输入发票代码" />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:hint="输入发票号码" />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:hint="输入开票时间" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="1"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:hint="输入发票价钱" />
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="14dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="选择发票类别" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="交通"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="差旅"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="耗材"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="招待" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="#2F5496" />
+
+    <Button
+        android:id="@+id/getin"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_10dp_corners"
+        android:backgroundTint="#2F5496"
+        android:text="确认上传"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"></Button>
+    <Button
+        android:id="@+id/return1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_10dp_corners"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2F5496"
+        android:text="返回首页"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"></Button>
+
+
+
+</LinearLayout>
